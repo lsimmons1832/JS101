@@ -26,8 +26,8 @@ function nuggetMaker(animal) {
 	return myNugget; //to get myNugget out you have to return it
 }
 
-function shackMaker(divLocation, typeOfNugget) {
-	divLocation.innerHTML += typeOfNugget;
+function shackMaker(divLocation, divText) {
+	divLocation.innerHTML += divText;
 }
 
 var chickenNuggets = nuggetMaker("chicken"); //The idea is that you feed something
