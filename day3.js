@@ -26,15 +26,15 @@ function nuggetMaker(animal) {
 	return myNugget; //to get myNugget out you have to return it
 }
 
-function shackMaker(typeOfNugget) {
-	availElement.innerHTML += typeOfNugget;
+function shackMaker(divLocation, typeOfNugget) {
+	divLocation.innerHTML += typeOfNugget;
 }
 
 var chickenNuggets = nuggetMaker("chicken"); //The idea is that you feed something
-shackMaker(chickenNuggets);
+shackMaker(availElement, chickenNuggets);
 
 var lobsterNuggets = nuggetMaker("lobster"); //into a function and get stuff out of it
-shackMaker(lobsterNuggets);
+shackMaker(availElement, lobsterNuggets);
 
 var shackName = "Tasha's Shack-A-Rack";
 nuggetElement.innerHTML += shackName;
