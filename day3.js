@@ -16,6 +16,7 @@ for (var myKey in myCat){
 }
 
 //Functions
+
 var nuggetElement = document.getElementById("nuggetShack");
 var availElement = document.getElementById("availForPurchase");
 console.log("nuggetElement", nuggetElement);
@@ -26,7 +27,7 @@ function nuggetMaker(animal) {
 	return myNugget; //to get myNugget out you have to return it
 }
 
-function shackMaker(divLocation, divText) {
+function shackMaker(divLocation, divText) { //in this ex. divLoc & divTex are placeholders
 	var newBreak = lineBreak();
 	divLocation.innerHTML += divText + newBreak;
 	//availElement.innerHTML += chickenNuggets
