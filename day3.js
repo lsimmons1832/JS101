@@ -27,9 +27,14 @@ function nuggetMaker(animal) {
 }
 
 function shackMaker(divLocation, divText) {
-	divLocation.innerHTML += divText;
+	var newBreak = lineBreak();
+	divLocation.innerHTML += divText + newBreak;
+	//availElement.innerHTML += chickenNuggets
 }
 
+function lineBreak(){
+	return "<br>";
+}
 var chickenNuggets = nuggetMaker("chicken"); //The idea is that you feed something
 shackMaker(availElement, chickenNuggets);
 
