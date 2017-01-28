@@ -17,21 +17,27 @@ for (var myKey in myCat){
 
 //Functions
 var nuggetElement = document.getElementById("nuggetShack");
+var availElement = document.getElementById("availForPurchase");
 console.log("nuggetElement", nuggetElement);
+console.log("availElement", availElement);
 
 function nuggetMaker(animal) {
 	var myNugget = "breading" + animal + "breading"; //At this point myNugget is stuck in this function
 	return myNugget; //to get myNugget out you have to return it
 }
 
+function shackMaker(typeOfNugget) {
+	availElement.innerHTML += typeOfNugget;
+}
+
 var chickenNuggets = nuggetMaker("chicken"); //The idea is that you feed something
-console.log("chickenNuggets", chickenNuggets);
-nuggetElement.innerHTML = chickenNuggets;
+shackMaker(chickenNuggets);
 
 var lobsterNuggets = nuggetMaker("lobster"); //into a function and get stuff out of it
-console.log("lobsterNuggets",lobsterNuggets);
-nuggetElement.innerHTML = lobsterNuggets;
+shackMaker(lobsterNuggets);
 
+var shackName = "Tasha's Shack-A-Rack";
+nuggetElement.innerHTML += shackName;
 
 //var ____ = nuggetMaker("myComputer");
 
